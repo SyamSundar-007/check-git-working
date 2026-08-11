@@ -66,7 +66,7 @@ if option == "Home":
     movie_name = st.text_input("Enter your movie name")
 
     if st.button("Check recomendations"):
-        movie_list = recomend_movie(movie_name )
+        movie_list = recomend_movie(movie_name.lower() )
         for idx, value  in enumerate(movie_list, start=1):
             st.write(f"{idx} . {value}")
 
