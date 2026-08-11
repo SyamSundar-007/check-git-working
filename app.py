@@ -22,17 +22,6 @@ def recomend_movie( title , n=10):
     similar_index = sim_score.argsort()[::-1][1:n+1]
     return data['title'].iloc[similar_index]
 
-# text = input("Enter the movie: ")
-
-# # list_mov = recomend_movie( text)
-# # print(list_mov)
-
-
-# # st.title("Movie Recommendation System")
-
-
-
-# return
 # -----------------------------
 # Page Configuration
 # -----------------------------
@@ -116,5 +105,3 @@ elif option == "Analysis":
 
     # Example
     # st.bar_chart(df["column_name"])
-
-
