@@ -4,8 +4,6 @@ import pickle as pkl
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
 
-
-
 data = pkl.load( open('df_new.pkl', 'rb'))
 indices = pkl.load( open('indices.pkl' , 'rb') )
 tfidf_matrix = pkl.load( open("tfidf_matrix.pkl" , 'rb') )
